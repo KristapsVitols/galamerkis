@@ -1,0 +1,48 @@
+version: '3.1'
+
+services:
+  nginx:
+    build: ./nginx
+    depends_on:
+      - client
+    environment:
+      VIRTUAL_HOST: galamerkis.local
+      VIRTUAL_PORT: 8080
+    expose:
+      - 8080
+  client:
+    build: ./client
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+  strapi:
+    image: strapi/strapi
+    volumes:
+      - ./app:/srv/app
+    env_file:
+      - ./.env
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:14.1
+    restart: always
+    volumes:
+      - ~/postgres:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+    ports:
+      - "5432:5432"
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./certs:/etc/nginx/certs
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    restart: unless-stopped
+
+networks:
+  default:
+    external:
+      name: galamerkis-proxy
