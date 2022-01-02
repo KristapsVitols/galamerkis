@@ -78,6 +78,7 @@ class Deploy {
     async #closeConnection() {
         await this.sshClient.execCommand('exit');
         console.log(chalk.green.bold('Connection closed!'));
+        process.exit(0);
     }
 }
 
