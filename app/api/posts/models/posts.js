@@ -1,6 +1,6 @@
 'use strict';
 
-const slugify = require('slugify');
+// const slugify = require('slugify');
 
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#lifecycle-hooks)
@@ -10,7 +10,7 @@ const slugify = require('slugify');
 module.exports = {
     lifecycles: {
         beforeCreate(data) {
-            data.slug = slugify(data.title);
+            // data.slug = slugify(data.title);
         },
     }
 };
