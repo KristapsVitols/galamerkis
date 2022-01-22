@@ -21,18 +21,22 @@ export default {
       {hid: 'twitter:description', name: 'twitter:description', content: description},
       {hid: 'twitter:image', name: 'twitter:image', content: 'https://www.galamerkis.lv/galamerkis-og.png'},
     ],
+    bodyAttrs: {
+      class: 'bg-gray-100 font-sans leading-normal tracking-normal'
+    },
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.svg'},
       {rel: 'canonical', href: 'https://www.galamerkis.lv/'},
-
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    '~/plugins/axios',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
