@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "deploy.js",
-  "scripts": {
-    "ssl": "cd ./certs && create-ssl-certificate --hostname galamerkis --domain local"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
-    "create-ssl-certificate": "^4.0.0",
     "node-ssh": "^12.0.0"
   }
 }

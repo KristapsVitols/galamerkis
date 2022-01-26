@@ -5,11 +5,9 @@ services:
     build: ./nginx
     depends_on:
       - client
-    environment:
-      VIRTUAL_HOST: galamerkis.local
-      VIRTUAL_PORT: 8080
-    expose:
-      - 8080
+      - strapi
+    ports:
+      - "8080:8080"
   client:
     build: ./client
     volumes:
@@ -32,17 +30,3 @@ services:
       - ./.env
     ports:
       - "5432:5432"
-  nginx-proxy:
-    image: jwilder/nginx-proxy:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./certs:/etc/nginx/certs
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-    restart: unless-stopped
-
-networks:
-  default:
-    external:
-      name: galamerkis-proxy
