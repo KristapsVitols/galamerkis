@@ -25,7 +25,7 @@ export default {
       class: 'bg-gray-100 font-sans leading-normal tracking-normal'
     },
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.svg'},
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'canonical', href: 'https://www.galamerkis.lv/'},
     ],
   },
