@@ -15,10 +15,12 @@ export const mutations = {
 }
 
 export const actions = {
-    async getPostsByCategory({ commit, state}, category = null) {
+    async getPosts({ commit, state}, category = null) {
         const url = category
             ? `/content/posts?category.name=${category.name}&_sort=id:desc`
             : `/content/posts?_sort=id:desc`;
+
+        commit('categories/setCurrentCategory', category, {root: true});
         commit('setIsLoading', true, {root: true});
 
         const posts = await this.$axios.$get(url);

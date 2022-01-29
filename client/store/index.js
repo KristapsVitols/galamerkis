@@ -8,16 +8,11 @@ export const mutations = {
 
 // Initial data for the main page. Categories, lead post and rest of the posts.
 export const actions = {
-    async nuxtServerInit({ commit }, { $axios }) {
+    async getHomepageData({getters, dispatch}, categorySlug = null) {
         try {
-            const categories = await $axios.$get('/content/categories');
-            commit('categories/setCategories', categories);
-
-            const posts = await $axios.$get('/content/posts?_sort=id:desc');
-            const [leadPost, ...allPosts] = posts;
-
-            commit('posts/setLeadPost', leadPost);
-            commit('posts/setPosts', allPosts);
+            await dispatch('categories/getCategories');
+            const category = getters['categories/categories'].find(category => category.name === categorySlug);
+            await dispatch('posts/getPosts', category);
         } catch (e) {
             console.error(e);
         }

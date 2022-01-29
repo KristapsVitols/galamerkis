@@ -14,6 +14,13 @@ export const mutations = {
     },
 }
 
+export const actions = {
+    async getCategories({commit}) {
+        const categories = await this.$axios.$get('/content/categories');
+        commit('setCategories', categories);
+    }
+}
+
 export const getters = {
     currentCategory: state => Category.fromRequest(state.currentCategory),
     categories: state => state.categories.map(category => Category.fromRequest(category)),

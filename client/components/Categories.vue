@@ -2,21 +2,20 @@
     <nav class="mt-0 w-full">
         <div class="container mx-auto flex items-center">
             <div class="flex w-1/2 pl-4 mb-2">
-                <ul class="list-reset flex justify-between flex-1 md:flex-none items-center text-lg">
+                <ul class="list-reset flex justify-between flex-1 md:flex-none items-center text-base font-medium">
                     <li class="mr-2">
-                        <a class="inline-block py-2 px-2 text-white no-underline"
+                        <router-link class="inline-block py-2 px-2 text-white no-underline"
                            :class="!currentCategory.name ? 'text-white' : 'text-gray-800'"
-                           href="javascript:"
-                           @click="handleCategoryChange()">
+                           to="/">
                             Jaunākie
-                        </a>
+                        </router-link>
                     </li>
                     <li v-for="category in categories" class="mr-2">
-                        <a class="inline-block no-underline hover:text-gray-200 py-2 px-2"
+                        <router-link class="inline-block no-underline hover:text-gray-200 py-2 px-2"
                            :class="currentCategory.name === category.name ? 'text-white' : 'text-gray-800'"
-                           href="javascript:" @click="handleCategoryChange(category)">
+                           :to="{name: 'category', params: {category: category.name}}">
                             {{ category.displayName }}
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -24,7 +23,7 @@
     </nav>
 </template>
 <script>
-import {mapGetters, mapActions, mapMutations} from 'vuex';
+import {mapGetters, mapActions} from 'vuex';
 
 export default {
     name: 'Categories',
@@ -36,15 +35,8 @@ export default {
     },
     methods: {
         ...mapActions({
-            getPostsByCategory: 'posts/getPostsByCategory',
+            getPosts: 'posts/getPosts',
         }),
-        ...mapMutations({
-            setCurrentCategory: 'categories/setCurrentCategory',
-        }),
-        handleCategoryChange(category = null) {
-            this.setCurrentCategory(category);
-            this.getPostsByCategory(category);
-        },
     },
 }
 </script>

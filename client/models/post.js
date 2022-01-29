@@ -2,6 +2,7 @@ export class Post {
     title = '';
     content = '';
     slug = '';
+    createdAt = '';
     image = {};
     category = {};
 
@@ -26,13 +27,22 @@ export class Post {
         return `/${this.category.name}/${this.slug}`;
     }
 
+    get creationDate() {
+        return new Date(this.createdAt).toLocaleDateString().split('T')[0];
+    }
+
     static fromRequest(obj) {
         const self = new Post();
         if (!obj) {
             return self;
         }
 
-        Object.keys(obj).filter(key => key in self).forEach(key => self[key] = obj[key]);
+        self.title = obj.title;
+        self.content = obj.content;
+        self.createdAt = obj.created_at;
+        self.slug = obj.slug;
+        self.image = obj.image;
+        self.category = obj.category;
 
         return self;
     }
