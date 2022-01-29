@@ -5,7 +5,7 @@
 
         <div class="text-center pt-8 md:pt-32">
             <p class="text-sm md:text-base text-teal-500 font-bold">
-                - {{ new Date(post.created_at).toISOString().split('T')[0] }} -
+                {{ new Date(post.created_at).toISOString().split('T')[0] }}
             </p>
             <h1 class="font-bold break-normal text-3xl md:text-5xl">
                 {{ post.title }}
@@ -20,7 +20,7 @@
             <div class="mx-0 sm:mx-6">
                 <div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal shadow-md m-5">
                     <div class="font-serif">
-                        {{ post.content }}
+                        <vue-simple-markdown :source="post.content"/>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ProgressBar from '../../components/ProgressBar';
-import {Post} from '../../models/post';
+
 export default {
     components: {ProgressBar, Footer, Header},
     data: () => ({
