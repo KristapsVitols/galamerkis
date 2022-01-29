@@ -1,6 +1,6 @@
 <template>
     <div class="container font-sans rounded text-center mb-24">
-        <h2 class="font-bold break-normal text-2xl md:text-3xl">Saņem jaunākos rakstus epastā</h2>
+        <h2 class="font-bold break-normal text-2xl md:text-3xl">Saņem jaunākos rakstus ēpastā</h2>
         <div class="w-full text-center pt-4">
             <form action="#">
                 <div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
