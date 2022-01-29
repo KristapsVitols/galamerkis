@@ -38,6 +38,15 @@
     },
     "slug": {
       "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sourceTitle": {
+      "type": "string"
+    },
+    "sourceLink": {
+      "type": "string"
     }
   }
 }
