@@ -1,5 +1,5 @@
-const title = 'TBD | Galamērķis';
-const description = 'Galamērķis description ...';
+const title = 'Aktualitātes tūrismā & Iedvesmojoši galamērķi | Galamērķis';
+const description = 'Informatīvs tūrisma blogs, kas palīdzēs ieplānot Tavas brīvdienas. Aktuālais tūrismā Latvijā un pasaulē, iedvesmojoši galamērķi un spilgtāko ceļojumu atmiņas.';
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
