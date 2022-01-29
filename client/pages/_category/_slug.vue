@@ -13,7 +13,7 @@
         </div>
 
         <div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
-             :style="`background-image:url('/content/${post.image.url}'); height: 75vh;`">
+             :style="`background-image:url('/content${post.image.url}'); height: 75vh;`">
         </div>
 
         <div class="container max-w-5xl mx-auto -mt-32">

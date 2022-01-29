@@ -16,7 +16,7 @@ export const mutations = {
 
 export const actions = {
     async getCategories({commit}) {
-        const categories = await this.$axios.$get('/content/categories');
+        const categories = await this.$axios.$get('/content/categories?_sort=id:asc');
         commit('setCategories', categories);
     }
 }

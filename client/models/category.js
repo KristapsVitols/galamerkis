@@ -1,6 +1,9 @@
 export class Category {
     name = '';
     displayName = '';
+    title = '';
+    description = '';
+    image = {};
 
     static fromRequest(obj) {
         const self = new Category();
