@@ -4,7 +4,7 @@
             <div class="flex flex-wrap items-center content-center">
                 <div class="flex w-1/2 justify-start text-white font-extrabold">
                     <a class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2" href="#">
-                        <span class="hidden w-0 md:w-auto md:block pl-1">{{ post.title }} | Galamērķis</span>
+                        <span class="hidden w-0 md:w-auto md:block pl-1">{{ post.title }}</span>
                     </a>
                 </div>
                 <div class="flex w-1/2 justify-end content-center">
