@@ -9,9 +9,9 @@
                     </router-link>
                 </div>
                 <div class="flex w-full md:w-1/3 justify-center">
-                    <p class="text-white m-0 text-sm">
-                        Izstrādāja <a class="font-bold" target="_blank" href="https://www.bitflake.lv">bitflake.lv</a>
-                    </p>
+                    <a class="text-white m-0 text-sm" target="_blank" href="https://www.bitflake.lv">
+                        Izstrādāja <span class="font-bold">bitflake.lv</span>
+                    </a>
                 </div>
                 <div class="flex w-full content-center justify-between md:w-1/3 md:justify-end">
                     <nav class="list-reset flex justify-center flex-1 md:flex-none items-center">
