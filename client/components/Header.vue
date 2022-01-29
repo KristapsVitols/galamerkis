@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('/hero-background.jpg'); height: 35vh; max-height:460px;">
+    <div class="w-full m-0 p-0 bg-cover bg-bottom" :style="`background-image:url('/hero-background.jpg'); height: ${this.height}; max-height:460px;`">
         <div class="container px-4 md:px-0 max-w-6xl mx-auto">
             <div class="text-white flex justify-between pt-6">
                 <h1 class="text-3xl font-semibold tracking-wider">
@@ -18,5 +18,12 @@
 <script>
 export default {
     name: 'Header',
+    props: {
+        height: {
+            type: String,
+            required: false,
+            default: '35vh',
+        }
+    }
 }
 </script>
