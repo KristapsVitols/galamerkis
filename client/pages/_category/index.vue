@@ -8,7 +8,6 @@ export default {
     name: 'Index',
     components: {MainPage},
     async asyncData({store, route}) {
-        console.log(route);
         await store.dispatch('getHomepageData', route.params.category);
     }
 }
