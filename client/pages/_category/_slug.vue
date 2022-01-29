@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header/>
-        <ProgressBar/>
+        <ProgressBar :post="post"/>
 
         <div class="text-center pt-8 md:pt-32">
             <p class="text-sm md:text-base text-teal-500 font-bold">
@@ -55,6 +55,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="container px-4 md:px-0 max-w-6xl mx-auto">
+            <div class="mx-0 sm:mx-6 mb-16 my-24">
+                <Subscribe/>
+            </div>
+        </div>
+
         <Footer/>
     </div>
 </template>
