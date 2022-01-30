@@ -2,8 +2,9 @@
     <div class="w-full m-0 p-0 bg-cover bg-bottom" :style="`background-image:url('/hero-background.jpg'); height: ${this.height}; max-height:460px;`">
         <div class="container px-4 md:px-0 max-w-6xl mx-auto">
             <div class="text-white flex justify-between pt-6">
-                <h1 class="text-3xl font-semibold tracking-wider">
-                    <router-link to="/">Galamērķis</router-link>
+                <h1 class="text-2xl font-semibold tracking-wider font-serif antialiased flex items-center">
+                    <img src="/mountain-icon.svg" width="35" class="inline-block mr-2">
+                    <router-link to="/">| Galamērķis</router-link>
                 </h1>
                 <nav class="flex items-center text-lg font-medium">
                     <router-link to="/par-mums" class="mr-4">Par mums</router-link>
