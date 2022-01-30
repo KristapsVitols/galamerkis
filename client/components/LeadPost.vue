@@ -1,6 +1,6 @@
 <template>
     <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
-        <router-link :to="post.postUrl" class="flex flex-wrap no-underline hover:no-underline">
+        <router-link :to="{name: 'category-slug', params: {category: post.category.name, slug: post.slug}}" class="flex flex-wrap no-underline hover:no-underline">
             <div class="w-full md:w-2/3 rounded-t">
                 <img :src="post.imageUrl" class="h-full w-full shadow">
             </div>

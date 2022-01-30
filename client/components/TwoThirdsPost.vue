@@ -1,7 +1,7 @@
 <template>
     <div class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-            <router-link :to="post.postUrl" class="flex flex-wrap no-underline hover:no-underline">
+            <router-link :to="{name: 'category-slug', params: {category: post.category.name, slug: post.slug}}" class="flex flex-wrap no-underline hover:no-underline">
                 <img :src="post.imageUrl" :alt="post.imageAlt" class="h-full w-full rounded-t pb-6">
                 <p class="w-full text-gray-600 text-xs md:text-sm px-6">{{ post.category.displayName }}</p>
                 <div class="w-full font-bold text-xl text-gray-900 px-6">{{ post.title }}</div>
