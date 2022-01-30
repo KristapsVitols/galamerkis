@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex w-full md:w-1/3 justify-center">
                     <a class="text-white m-0 text-sm" target="_blank" href="https://www.bitflake.lv">
-                        Izstrādāja <span class="font-bold">bitflake.lv</span>
+                        Izstrādāja <span class="font-bold">bitflake</span>
                     </a>
                 </div>
                 <div class="flex w-full content-center justify-between md:w-1/3 md:justify-end">
