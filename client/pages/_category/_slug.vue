@@ -5,7 +5,7 @@
             <router-link :to="{name: 'category', params: {category: post.category.name}}" class="inline-block py-2 px-2 text-gray-800 no-underline hover:text-gray-200">
                 {{ post.category.displayName }}
             </router-link>
-                /
+                <span class="text-gray-800">/</span>
             <router-link :to="{name: 'category-slug', params: {category: post.category.name, slug: post.slug}}" class="inline-block py-2 px-2 text-white no-underline">
                 {{ post.title }}
             </router-link>
