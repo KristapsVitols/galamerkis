@@ -15,8 +15,12 @@ export class Post {
         return minutes === 1 ? `${minutes} minūte` : `${minutes} minūtes`;
     }
 
-    get imageUrl() {
-        return `/content/${this.image.url}`;
+    getImageUrl(size = '') {
+        if (!size) {
+            return `/content/${this.image.url}`;
+        }
+
+        return `/content/${this.image.formats[size].url}`;
     }
 
     get imageAlt() {
