@@ -19,7 +19,7 @@
         <div class="container max-w-5xl mx-auto -mt-32">
             <div class="mx-0 sm:mx-6">
                 <div class="bg-white w-full p-8 md:p-24 text-xl text-gray-800 leading-normal shadow-md m-5">
-                    <div v-html="post.content" class="font-serif">
+                    <div id="content" v-html="post.content" class="font-serif">
                     </div>
                 </div>
             </div>
@@ -128,3 +128,8 @@ export default {
     },
 }
 </script>
+<style>
+ #content a {
+     color: #11998e;
+ }
+</style>
