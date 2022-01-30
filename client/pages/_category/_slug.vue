@@ -17,10 +17,10 @@
         </div>
 
         <div class="container max-w-5xl mx-auto -mt-32">
+            <h1>Hello there.</h1>
             <div class="mx-0 sm:mx-6">
                 <div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal shadow-md m-5">
-                    <div class="font-serif">
-                        <vue-simple-markdown :source="post.content"/>
+                    <div v-html="post.content" class="font-serif">
                     </div>
                 </div>
             </div>
