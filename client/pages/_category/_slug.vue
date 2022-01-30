@@ -77,6 +77,24 @@ import ProgressBar from '../../components/ProgressBar';
 
 export default {
     components: {ProgressBar, Footer, Header},
+    head() {
+        return {
+            title: `${this.post.title} | Galamērķis`,
+            meta: [
+                {hid: 'description', name: 'description', content: this.post.description},
+                // Social sharing tags
+                {hid: 'og:title', property: 'og:title', content: `${this.post.title} | Galamērķis`},
+                {hid: 'og:type', property: 'og:type', content: 'website'},
+                {hid: 'og:site_name', property: 'og:site_name', content: 'Galamērķis'},
+                {hid: 'og:url', property: 'og:url', content: `https://www.galamerkis.lv/${this.post.category.name}/${this.post.slug}`},
+                {hid: 'og:description', property: 'og:description', content: this.post.description},
+                {hid: 'og:image', name: 'og:image', content: `/content${this.post.image?.url}`},
+                {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image'},
+                {hid: 'twitter:description', name: 'twitter:description', content: this.post.description},
+                {hid: 'twitter:image', name: 'twitter:image', content: `/content${this.post.image?.url}`},
+            ],
+        }
+    },
     data: () => ({
         content: [
             {
