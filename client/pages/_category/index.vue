@@ -9,11 +9,11 @@ export default {
     name: 'Index',
     head() {
         return {
-            title: `${this.currentCategory.title} | Galamērķis`,
+            title: `${this.currentCategory.displayName} | Galamērķis`,
             meta: [
                 {hid: 'description', name: 'description', content: this.currentCategory.description},
                 // Social sharing tags
-                {hid: 'og:title', property: 'og:title', content: `${this.currentCategory.title} | Galamērķis`},
+                {hid: 'og:title', property: 'og:title', content: `${this.currentCategory.displayName} | Galamērķis`},
                 {hid: 'og:type', property: 'og:type', content: 'website'},
                 {hid: 'og:site_name', property: 'og:site_name', content: 'Galamērķis'},
                 {hid: 'og:url', property: 'og:url', content: `https://www.galamerkis.lv/${this.currentCategory.name}`},
