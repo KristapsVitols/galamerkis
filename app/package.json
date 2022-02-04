@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@sendgrid/client": "^7.6.0",
+    "email-validator": "^2.0.4",
     "knex": "0.21.18",
     "pg": "^8.7.1",
     "slugify": "^1.6.5",
