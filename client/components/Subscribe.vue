@@ -9,7 +9,7 @@
             <div class="w-full text-center pt-4">
                 <form @submit.prevent="subscribe">
                     <div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
-                        <input v-model="email" @input="error = ''" type="text" placeholder="tavs@epasts"
+                        <input v-model="email" @input="error = ''" name="email" type="text" placeholder="tavs@epasts"
                                class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
                         <button :disabled="!canSubmit"
                                 type="submit"
