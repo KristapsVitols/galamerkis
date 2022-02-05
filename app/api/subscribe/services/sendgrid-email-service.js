@@ -17,7 +17,7 @@ exports.sendMail = async (post) => {
                 html_content: template
                     .replace(/{{postTitle}}/g, post.title)
                     .replace(/{{postUrl}}/g, `https://www.galamerkis.lv/${post.category.name}/${post.slug}`)
-                    .replace(/{{postImage}}/g, post.image.formats.large.url),
+                    .replace(/{{postImage}}/g, `/content/${post.image.formats.large.url}`),
                 sender_id: 2604202,
                 suppression_group_id: 19004,
             },
