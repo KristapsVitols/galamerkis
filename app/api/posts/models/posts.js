@@ -11,7 +11,10 @@ const {sendMail} = require('../../subscribe/services/sendgrid-email-service');
 module.exports = {
     lifecycles: {
         beforeCreate(data) {
-            data.slug = slugify(data.title);
+            data.slug = slugify(data.title, {
+                lower: true,
+                strict: true,
+            });
         },
         async afterUpdate(post, id, updatedFields) {
             if (!updatedFields.published_at) {
