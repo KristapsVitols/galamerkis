@@ -47,6 +47,9 @@
     },
     "sourceLink": {
       "type": "string"
+    },
+    "emailTitle": {
+      "type": "string"
     }
   }
 }
