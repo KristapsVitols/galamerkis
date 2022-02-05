@@ -836,7 +836,7 @@ exports.template = `
             </div>
             <div>
                 <div class="layout one-col fixed-width stack"
-                     style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+                     style="Margin: 20px auto 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
                     <div class="layout__inner"
                          style="border-collapse: collapse;display: table;width: 100%;background-color: #307fb0;background: 0px 0px/auto auto repeat url('{{postImage}}') #307fb0;background-position: 0px 0px;background-image: url('{{postImage}}');background-repeat: repeat;background-size: auto auto;">
                         <!--[if (mso)|(IE)]>
