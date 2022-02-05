@@ -928,7 +928,6 @@ exports.template = `
                     </div>
                 </div>
                 <div style="line-height:40px;font-size:40px;" id="footer-bottom-spacing">&nbsp;</div>
-                <img src="{{postImage}}" alt=""/>
             </div>
 
         </td>
