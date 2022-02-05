@@ -16,7 +16,7 @@
 
         <div id="content" class="container px-4 md:px-0 max-w-4xl mx-auto my-auto flex items-center" style="flex-grow: 1">
             <div class="mx-0 sm:mx-6 grid grid-cols-2">
-                <img src="/keitija-krastina.jpg" class="rounded-full avatar"/>
+                <img src="/keitija-krastina.jpg" class="rounded-full avatar" alt="Keitija Krastina" loading="lazy"/>
                 <div>
                 <h3 class="text-2xl font-bold mb-6">Keitija Krastiņa</h3>
                 <p class="mb-4">
