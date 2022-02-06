@@ -17,7 +17,8 @@ module.exports = {
             });
         },
         async afterUpdate(post, id, updatedFields) {
-            if (!updatedFields.published_at) {
+            // has to be published and have email title
+            if (!updatedFields.published_at || !post.emailTitle) {
                 return;
             }
 
