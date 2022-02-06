@@ -3,7 +3,7 @@
         <div class="container mx-auto flex items-center">
             <div class="flex w-1/2 pl-4 mb-2">
                 <ul class="list-reset flex justify-between flex-1 md:flex-none items-center text-base font-medium">
-                    <li class="mr-2" @click="doStuff">
+                    <li class="mr-2">
                         <router-link class="inline-block py-2 px-2 text-white no-underline"
                            :class="!currentCategory.name ? 'text-white' : 'text-gray-800'"
                            to="/">
@@ -37,9 +37,6 @@ export default {
         ...mapActions({
             getPosts: 'posts/getPosts',
         }),
-        doStuff() {
-            this.doSOmething();
-        }
     },
 }
 </script>
