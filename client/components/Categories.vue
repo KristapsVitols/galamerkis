@@ -6,6 +6,7 @@
                     <li class="mr-2">
                         <router-link class="inline-block py-2 px-2 text-white no-underline"
                            :class="!currentCategory.name ? 'text-white' : 'text-gray-800'"
+                                     @click="doStuff"
                            to="/">
                             Jaunākie
                         </router-link>
@@ -37,6 +38,9 @@ export default {
         ...mapActions({
             getPosts: 'posts/getPosts',
         }),
+        doStuff() {
+            console.log(this.asdadsa.dsadada);
+        }
     },
 }
 </script>
