@@ -1,3 +1,5 @@
+import {NotFoundError} from '../errors/NotFoundError';
+
 export const state = () => ({
     isLoading: false,
 });
@@ -9,13 +11,14 @@ export const mutations = {
 // Initial data for the main page. Categories, lead post and rest of the posts.
 export const actions = {
     async getHomepageData({getters, dispatch}, categorySlug = null) {
-        try {
-            await dispatch('categories/getCategories');
-            const category = getters['categories/categories'].find(category => category.name === categorySlug);
-            await dispatch('posts/getPosts', category);
-        } catch (e) {
-            console.error(e);
+        await dispatch('categories/getCategories');
+        const category = getters['categories/categories'].find(category => category.name === categorySlug);
+
+        if (categorySlug && !category) {
+            throw new NotFoundError();
         }
+
+        await dispatch('posts/getPosts', category);
     },
 }
 

@@ -5,6 +5,7 @@
 <script>
 import {mapGetters} from 'vuex';
 import MainPage from '../../components/MainPage';
+import {NotFoundError} from '../../errors/NotFoundError';
 export default {
     name: 'Index',
     head() {
@@ -26,8 +27,14 @@ export default {
         }
     },
     components: {MainPage},
-    async asyncData({store, route}) {
-        await store.dispatch('getHomepageData', route.params.category);
+    async asyncData({store, route, error}) {
+        try {
+            await store.dispatch('getHomepageData', route.params.category);
+        } catch (e) {
+            if (e instanceof NotFoundError) {
+                return error({statusCode: e.statusCode});
+            }
+        }
     },
     computed: {
         ...mapGetters({
