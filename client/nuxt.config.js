@@ -51,6 +51,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        '@nuxtjs/sentry',
         '@nuxtjs/robots',
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
@@ -58,6 +59,10 @@ export default {
         '@nuxtjs/pwa',
         '@nuxtjs/sitemap',
     ],
+
+    sentry: {
+        dsn: process.env.SENTRY_NUXT_DSN,
+    },
 
     robots: {
         Sitemap: 'https://www.galamerkis.lv/sitemap.xml',
