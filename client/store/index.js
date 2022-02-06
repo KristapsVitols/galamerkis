@@ -11,6 +11,7 @@ export const mutations = {
 // Initial data for the main page. Categories, lead post and rest of the posts.
 export const actions = {
     async getHomepageData({getters, dispatch}, categorySlug = null) {
+        console.log(process.env);
         await dispatch('categories/getCategories');
         const category = getters['categories/categories'].find(category => category.name === categorySlug);
 
