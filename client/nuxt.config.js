@@ -46,6 +46,7 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/google-analytics',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -78,6 +79,10 @@ export default {
                 ...categories.data.map(category => `/${category.name}`)
             ];
         },
+    },
+
+    googleAnalytics: {
+        id: 'UA-113947757-1',
     },
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
