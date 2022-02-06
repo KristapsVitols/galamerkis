@@ -65,8 +65,16 @@ export default {
     sitemap: {
         hostname: 'https://www.galamerkis.lv',
         routes: async () => {
-            const categories = await axios.get(`${process.env.NGINX_URL}/content/categories`);
-            const posts = await axios.get(`${process.env.NGINX_URL}/content/posts`);
+            let httpsAgent;
+
+            if (process.server) {
+                const https = await import('https');
+                httpsAgent = new https.Agent({
+                    rejectUnauthorized: false
+                });
+            }
+            const categories = await axios.get(`${process.env.NGINX_URL}/content/categories`, {httpsAgent});
+            const posts = await axios.get(`${process.env.NGINX_URL}/content/posts`, {httpsAgent});
 
             return [
                 ...posts.data.map(post => `/${post.category.name}/${post.slug}`),
