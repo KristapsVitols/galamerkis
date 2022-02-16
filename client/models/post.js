@@ -16,11 +16,18 @@ export class Post {
     }
 
     getImageUrl(size = '') {
+        const defaultImage = `/content/${this.image.url}`;
         if (!size) {
-            return `/content/${this.image.url}`;
+            return defaultImage;
         }
 
-        return `/content/${this.image.formats[size].url}`;
+        const sizedImage = this.image.formats[size]?.url;
+
+        if (!sizedImage) {
+            return defaultImage;
+        }
+
+        return sizedImage;
     }
 
     get imageAlt() {
