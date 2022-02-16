@@ -103,11 +103,18 @@ export default {
             return minutes === 1 ? `${minutes} minūte` : `${minutes} minūtes`;
         },
         getImageUrl(post, imageSize = '') {
+            const defaultImage = `/content/${post.image.url}`;
             if (!imageSize) {
-                return `/content/${post.image.url}`;
+                return defaultImage;
             }
 
-            return `/content/${post.image.formats[imageSize].url}`;
+            const sizedImage = post.image.formats[imageSize]?.url;
+
+            if (!sizedImage) {
+                return defaultImage;
+            }
+
+            return `/content/${sizedImage}`;
         },
     }
 }

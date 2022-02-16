@@ -27,7 +27,7 @@ export class Post {
             return defaultImage;
         }
 
-        return sizedImage;
+        return `/content/${sizedImage}`;
     }
 
     get imageAlt() {
