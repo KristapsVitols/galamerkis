@@ -9,7 +9,7 @@
                     </router-link>
                 </div>
                 <div class="flex w-full md:w-1/3 justify-center">
-                    <a class="text-white m-0 text-sm" target="_blank" href="https://www.bitflake.lv">
+                    <a class="text-white m-0 text-sm" target="_blank" href="https://www.bitflake.lv" rel="noopener">
                         Izstrādāja <span class="font-bold">bitflake</span>
                     </a>
                 </div>

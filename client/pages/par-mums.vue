@@ -21,8 +21,8 @@
                 <h3 class="text-2xl font-bold mb-6">Keitija Krastiņa</h3>
                 <p class="mb-4">
                     Tūrisma bloga “Galamērķis” radītāja un satura veidotāja. Veido saturu arī Latvijas vadošajā tehnoloģiju blogā
-                    <a href="https://www.kursors.lv/author/keitija" target="_blank">Kursors.lv</a> un biznesa tehnoloģiju platformā
-                    <a href="http://www.bismart.lv" target="_blank">“BiSMART”</a>.
+                    <a href="https://www.kursors.lv/author/keitija" target="_blank" rel="noopener">Kursors.lv</a> un biznesa tehnoloģiju platformā
+                    <a href="http://www.bismart.lv" target="_blank" rel="noopener">“BiSMART”</a>.
                 </p>
                 <p>
                     Kaislību pret rakstīšanu un ceļošanu nolēmu apvienot. Šādi radies mans pirmais lielais projekts - tūrisma blogs "Galamērķis". Ceru, ka šis būs labs palīgs ikvienam - gan tiem, kuriem patīk ceļot uz tuviem un tāliem galamērķim, gan tiem, kuriem vienkārši interesē tūrisms.
