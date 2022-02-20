@@ -7,6 +7,7 @@
                     <router-link to="/">| Galamērķis</router-link>
                 </h1>
                 <nav class="flex items-center text-lg font-medium">
+                    <router-link to="/notikumu-kalendars" class="mr-4">Notikumu kalendārs</router-link>
                     <router-link to="/par-mums" class="mr-4">Par mums</router-link>
                     <a class="inline-block no-underline hover:text-white hover:text-underline" href="https://www.facebook.com/Galamerkis.lv/" target="_blank" rel="noopener">
                         <svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
