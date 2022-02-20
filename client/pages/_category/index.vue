@@ -1,5 +1,24 @@
 <template>
-    <MainPage/>
+    <div v-if="currentCategory.name === 'mans-celojums'">
+        <Header/>
+        <div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+            <div class="mx-0 sm:mx-6 mb-16">
+                <Categories/>
+                <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+                    <div class="w-full rounded-t p-8 flex flex-col items-center">
+                        <img src="/travel-together.svg" loading="lazy" style="max-width: 250px" alt="Ceļo kopā">
+                        <p class="font-medium text-xl text-gray-900 mb-0 mt-8 text-center w-full md:w-1/2">
+                            Šajā sadaļā varēsi iepazīties ar galamerkis.lv lasītāju un mūsu pašu skaistāko ceļojumu atmiņām stāstos un attēlos.
+                        </p>
+                    </div>
+                </div>
+                <hr class="mt-16 mb-24 border-gray-300">
+                <Subscribe/>
+            </div>
+        </div>
+        <Footer/>
+    </div>
+    <MainPage v-else/>
 </template>
 
 <script>
