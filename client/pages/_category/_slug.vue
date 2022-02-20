@@ -18,7 +18,7 @@
             <p class="text-sm md:text-base text-teal-500 font-bold">
                 {{ new Date(post.created_at).toISOString().split('T')[0] }}
             </p>
-            <h1 class="font-bold break-normal text-3xl md:text-5xl">
+            <h1 class="font-bold break-normal text-3xl md:text-5xl w-3/4 m-auto">
                 {{ post.title }}
             </h1>
         </div>
