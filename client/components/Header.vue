@@ -6,7 +6,7 @@
                     <img src="/mountain-icon.svg" width="35" class="inline-block mr-2" alt="Galamerkis" loading="lazy">
                     <router-link to="/">| Galamērķis</router-link>
                 </h1>
-                <nav class="flex items-center text-lg font-medium">
+                <nav class="flex items-center text-md font-medium">
                     <router-link to="/notikumu-kalendars" class="mr-4">Notikumu kalendārs</router-link>
                     <router-link to="/par-mums" class="mr-4">Par mums</router-link>
                     <a class="inline-block no-underline hover:text-white hover:text-underline" href="https://www.facebook.com/Galamerkis.lv/" target="_blank" rel="noopener">
