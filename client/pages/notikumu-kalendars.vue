@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="event-calendar">
         <Header height="25vh"/>
 
         <div class="container w-full max-w-6xl mx-auto">
@@ -136,5 +136,9 @@ export default {
 .cell:hover {
     border: 1px solid #11998e !important;
     border-radius: 6px;
+}
+
+.event-calendar a {
+    color: #11998e;
 }
 </style>
