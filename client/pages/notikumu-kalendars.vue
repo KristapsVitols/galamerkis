@@ -15,7 +15,7 @@
                 </router-link>
             </div>
 
-            <div class="event-calendar my-16">
+            <div class="my-16">
                 <div v-if="isLoading" class="flex justify-center">
                     <img src="/calendar-illustration.svg" alt="Kalendārs" style="max-width: 400px;">
                 </div>
@@ -138,7 +138,7 @@ export default {
     border-radius: 6px;
 }
 
-.event-calendar a {
+.modal a {
     color: #11998e;
 }
 </style>
