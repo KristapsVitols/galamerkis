@@ -1,5 +1,5 @@
 <template>
-    <div class="event-calendar">
+    <div>
         <Header height="25vh"/>
 
         <div class="container w-full max-w-6xl mx-auto">
@@ -15,7 +15,7 @@
                 </router-link>
             </div>
 
-            <div class="my-16">
+            <div class="event-calendar my-16">
                 <div v-if="isLoading" class="flex justify-center">
                     <img src="/calendar-illustration.svg" alt="Kalendārs" style="max-width: 400px;">
                 </div>
