@@ -117,12 +117,24 @@ export default {
 }
 
 .active .selected {
-    background: #11998e !important;
-    border: 1px solid #11998e !important;
+    background: #cae5ed !important;
+    border: 1px solid #cae5ed !important;
+    border-radius: 6px;
 }
 
 .vdp-datepicker__calendar {
     border: none !important;
     width: 100% !important;
+}
+
+.highlighted {
+    background: #11998e !important;
+    border: 1px solid #11998e !important;
+    border-radius: 6px;
+}
+
+.cell:hover {
+    border: 1px solid #11998e !important;
+    border-radius: 6px;
 }
 </style>
