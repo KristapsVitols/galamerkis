@@ -37,7 +37,12 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 export default {
-    components: {Footer, Header}
+    components: {Footer, Header},
+    head() {
+        return {
+            title: 'Par mums | Galamērķis'
+        }
+    },
 }
 </script>
 <style>
