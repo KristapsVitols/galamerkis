@@ -25,5 +25,14 @@ module.exports = {
             // Post has been published, schedule an email send.
             await sendMail(post);
         },
+        afterFind(results, params, log3) {
+            if (params.slug) {
+                try {
+                    strapi.query('posts').update({id: results[0].id}, {views: +results[0].views + 1});
+                } catch (e) {
+                    //
+                }
+            }
+        },
     }
 };

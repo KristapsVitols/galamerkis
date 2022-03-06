@@ -50,6 +50,11 @@
     },
     "emailTitle": {
       "type": "string"
+    },
+    "views": {
+      "type": "integer",
+      "default": 0,
+      "private": true
     }
   }
 }
