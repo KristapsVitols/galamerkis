@@ -5,7 +5,7 @@
                 <div v-for="relatedPost in relatedPosts" class="w-full md:w-1/3 px-2 pb-12">
                     <router-link :to="{name: 'category-slug', params: {category: relatedPost.category.name, slug: relatedPost.slug}}" class="block bg-white rounded shadow-md hover:shadow-lg relative smooth h-full no-underline hover:no-underline flex flex-col justify-between">
                         <div>
-                            <img :src="getImageUrl(relatedPost, 'small')" class="h-48 w-full rounded-t shadow" loading="lazy"/>
+                            <img :src="getImageUrl(relatedPost, 'small')" class="h-48 w-full rounded-t shadow object-cover" loading="lazy"/>
                             <div class="p-6 h-auto ">
                                 <p class="text-gray-600 text-xs md:text-sm">{{ relatedPost.category.displayName }}</p>
                                 <div class="font-bold text-xl text-gray-900">{{ relatedPost.title }}</div>
