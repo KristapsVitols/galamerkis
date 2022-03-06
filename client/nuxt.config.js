@@ -14,13 +14,13 @@ export default {
             // Social sharing tags
             {hid: 'og:title', property: 'og:title', content: title},
             {hid: 'og:type', property: 'og:type', content: 'website'},
-            {hid: 'og:site_name', property: 'og:site_name', content: 'Galamerkis'},
+            {hid: 'og:site_name', property: 'og:site_name', content: 'Galamērķis'},
             {hid: 'og:url', property: 'og:url', content: 'https://www.galamerkis.lv'},
             {hid: 'og:description', property: 'og:description', content: description},
-            {hid: 'og:image', name: 'og:image', content: 'https://www.galamerkis.lv/galamerkis-og.png'},
+            {hid: 'og:image', name: 'og:image', content: 'https://www.galamerkis.lv/galamerkis.webp'},
             {hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image'},
             {hid: 'twitter:description', name: 'twitter:description', content: description},
-            {hid: 'twitter:image', name: 'twitter:image', content: 'https://www.galamerkis.lv/galamerkis-og.png'},
+            {hid: 'twitter:image', name: 'twitter:image', content: 'https://www.galamerkis.lv/galamerkis.webp'},
         ],
         bodyAttrs: {
             class: 'bg-gray-100 font-sans leading-normal tracking-normal'
