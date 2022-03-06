@@ -76,6 +76,9 @@ export default {
                 {hid: 'twitter:description', name: 'twitter:description', content: this.post.description},
                 {hid: 'twitter:image', name: 'twitter:image', content: `/content${this.post.image?.url}`},
             ],
+            link: [
+                {rel: 'canonical', href: `https://www.galamerkis.lv/${this.post.category.name}/${this.post.slug}`},
+            ],
         }
     },
     data: () => ({

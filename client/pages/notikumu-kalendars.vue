@@ -63,7 +63,10 @@ export default {
     components: {Footer, Header},
     head() {
         return {
-            title: 'Notikumu kalendārs | Galamērķis'
+            title: 'Notikumu kalendārs | Galamērķis',
+            link: [
+                {rel: 'canonical', href: `https://www.galamerkis.lv/notikumu-kalendars`},
+            ]
         }
     },
     data: () => ({

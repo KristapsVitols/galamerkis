@@ -43,6 +43,9 @@ export default {
                 {hid: 'twitter:description', name: 'twitter:description', content: this.currentCategory.description},
                 {hid: 'twitter:image', name: 'twitter:image', content: `/content${this.currentCategory.image?.url}`},
             ],
+            link: [
+                {rel: 'canonical', href: `https://www.galamerkis.lv/${this.currentCategory.name}`},
+            ],
         }
     },
     components: {MainPage},

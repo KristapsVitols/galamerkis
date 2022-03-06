@@ -40,7 +40,10 @@ export default {
     components: {Footer, Header},
     head() {
         return {
-            title: 'Par mums | Galamērķis'
+            title: 'Par mums | Galamērķis',
+            link: [
+                {rel: 'canonical', href: `https://www.galamerkis.lv/par-mums`},
+            ],
         }
     },
 }
