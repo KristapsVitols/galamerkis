@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full m-0 p-0 bg-cover bg-bottom" :style="`background-image:url('/hero-background.jpg'); height: ${this.height}; max-height:460px;`">
+    <div class="header-background w-full m-0 p-0 bg-cover bg-bottom" :style="`height: ${this.height}; max-height:460px;`">
         <div class="container px-4 md:px-0 max-w-6xl mx-auto">
             <div class="text-white flex justify-between pt-6">
                 <h1 class="text-2xl font-semibold tracking-wider font-serif antialiased flex items-center">
@@ -29,3 +29,10 @@ export default {
     }
 }
 </script>
+<style>
+.header-background {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #15ba88, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #15ba88, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+</style>
