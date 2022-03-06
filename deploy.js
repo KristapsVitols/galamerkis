@@ -8,7 +8,7 @@ class Deploy {
     /**
      * @param {string} sshKeyPath - path to your ssh key
      */
-    constructor(sshKeyPath) {
+    constructor(sshKeyPath = '~/.ssh/id_rsa') {
         this.sshClient = new NodeSSH();
         this.sshKeyPath = sshKeyPath;
     }

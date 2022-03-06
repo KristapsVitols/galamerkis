@@ -100,7 +100,8 @@ export default {
     pwa: {
         manifest: {
             lang: 'en',
-            theme_color: '#11998e',
+            theme_color: '#15ba88',
+            name: 'Galamērķis',
         }
     },
 
