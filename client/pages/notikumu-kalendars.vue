@@ -15,12 +15,12 @@
                 </router-link>
             </div>
 
-            <div class="my-16">
+            <div class="my-8 md:my-16">
                 <div v-if="isLoading" class="flex justify-center">
                     <img src="/calendar-illustration.svg" alt="Kalendārs" style="max-width: 400px;">
                 </div>
                 <client-only>
-                    <div v-if="!isLoading" class="grid grid-cols-4 gap-6 flex items-stretch content-center font-serif">
+                    <div v-if="!isLoading" class="px-4 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 flex items-stretch content-center font-serif">
                         <date-picker
                             v-for="month in 12"
                             :value="new Date(new Date().getFullYear(), month - 1, new Date().getDate())"

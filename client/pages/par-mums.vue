@@ -15,18 +15,18 @@
         </div>
 
         <div id="content" class="container px-4 md:px-0 max-w-4xl mx-auto my-4 flex items-center" style="flex-grow: 1">
-            <div class="mx-0 sm:mx-6 grid grid-cols-2">
-                <img src="/keitija-krastina.jpg" class="rounded-full avatar" alt="Keitija Krastina" loading="lazy"/>
+            <div class="mx-0 sm:mx-6 grid grid-cols-1 md:grid-cols-2">
+                <img src="/keitija-krastina.jpg" class="rounded-full avatar w-1/3 md:w-2/3 mb-4 md:mb-0" alt="Keitija Krastina" loading="lazy"/>
                 <div>
-                <h3 class="text-2xl font-bold mb-6">Keitija Krastiņa</h3>
-                <p class="mb-4">
-                    Tūrisma bloga “Galamērķis” radītāja un satura veidotāja. Veido saturu arī Latvijas vadošajā tehnoloģiju blogā
-                    <a href="https://www.kursors.lv/author/keitija" target="_blank" rel="noopener">Kursors.lv</a> un biznesa tehnoloģiju platformā
-                    <a href="http://www.bismart.lv" target="_blank" rel="noopener">“BiSMART”</a>.
-                </p>
-                <p>
-                    Kaislību pret rakstīšanu un ceļošanu nolēmu apvienot. Šādi radies mans pirmais lielais projekts - tūrisma blogs "Galamērķis". Ceru, ka šis būs labs palīgs ikvienam - gan tiem, kuriem patīk ceļot uz tuviem un tāliem galamērķim, gan tiem, kuriem vienkārši interesē tūrisms.
-                </p>
+                    <h3 class="text-2xl font-bold mb-6">Keitija Krastiņa</h3>
+                    <p class="mb-4">
+                        Tūrisma bloga “Galamērķis” radītāja un satura veidotāja. Veido saturu arī Latvijas vadošajā tehnoloģiju blogā
+                        <a href="https://www.kursors.lv/author/keitija" target="_blank" rel="noopener">Kursors.lv</a> un biznesa tehnoloģiju platformā
+                        <a href="http://www.bismart.lv" target="_blank" rel="noopener">“BiSMART”</a>.
+                    </p>
+                    <p>
+                        Kaislību pret rakstīšanu un ceļošanu nolēmu apvienot. Šādi radies mans pirmais lielais projekts - tūrisma blogs "Galamērķis". Ceru, ka šis būs labs palīgs ikvienam - gan tiem, kuriem patīk ceļot uz tuviem un tāliem galamērķim, gan tiem, kuriem vienkārši interesē tūrisms.
+                    </p>
                 </div>
             </div>
         </div>
