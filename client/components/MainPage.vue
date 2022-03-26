@@ -6,7 +6,7 @@
             <div class="mx-0 sm:mx-6 mb-16">
                 <Categories/>
                 <Posts/>
-                <hr class="my-24 border-gray-300">
+                <hr class="my-12 md:my-24 border-gray-300">
                 <Subscribe/>
             </div>
         </div>

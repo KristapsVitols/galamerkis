@@ -1,16 +1,16 @@
 <template>
-    <div class="container font-sans rounded text-center mb-24">
+    <div class="container font-sans rounded text-center mb-12 md:mb-24">
         <div v-if="hasSubmitted" class="flex flex-col items-center">
             <h3 class="mb-8 text-2xl md:text-3xl text-gray-800 font-bold">Paldies, ka abonēji!</h3>
-            <img style="max-width: 400px;" src="/subscribe-success.svg" alt="" loading="lazy"/>
+            <img src="/subscribe-success.svg" alt="" loading="lazy" class="w-3/4 md:w-1/3"/>
         </div>
         <template v-else>
             <h2 class="font-bold break-normal text-2xl md:text-3xl">Saņem jaunākos rakstus e-pastā</h2>
             <div class="w-full text-center pt-4">
                 <form @submit.prevent="subscribe">
-                    <div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+                    <div class="max-w-xl mx-auto p-1 flex flex-col md:flex-row flex-wrap md:items-center">
                         <input v-model="email" @input="error = ''" name="email" type="text" placeholder="tavs@epasts"
-                               class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
+                               class="flex-1 appearance-none rounded shadow p-3 text-gray-600 md:mr-2 focus:outline-none">
                         <button :disabled="!canSubmit"
                                 type="submit"
                                 :class="{'opacity-50': !canSubmit}"
