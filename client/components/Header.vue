@@ -1,6 +1,6 @@
 <template>
     <div class="header-background w-full m-0 p-0 bg-cover bg-bottom" :style="`height: ${this.height}; max-height:460px;`">
-        <div class="container px-4 md:px-0 max-w-6xl mx-auto">
+        <div class="container px-4 lg:px-0 max-w-6xl mx-auto">
             <div class="text-white flex justify-between pt-6">
                 <router-link to="/">
                     <h1 class="text-2xl font-semibold tracking-wider font-serif antialiased flex items-center">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header height="25vh"/>
-        <div class="container w-full max-w-6xl mx-auto -mt-12 text-base font-medium">
+        <div class="container w-full max-w-6xl mx-auto -mt-12 text-base font-medium truncate">
             <router-link :to="{name: 'category', params: {category: post.category.name}}"
                          class="inline-block py-2 px-2 text-gray-800 no-underline hover:text-gray-200">
                 {{ post.category.displayName }}
