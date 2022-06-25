@@ -12,7 +12,7 @@
                     </li>
                     <li v-for="category in categories" class="mr-2">
                         <router-link class="inline-block no-underline hover:text-gray-200 py-2 px-2"
-                           :class="currentCategory.name === category.name ? 'text-white' : 'text-gray-800'"
+                           :class="[currentCategory.name === category.name ? 'text-white' : 'text-gray-800', category.name === 'mans-celojums' ? 'hidden sm:block' : '']"
                            :to="{name: 'category', params: {category: category.name}}">
                             {{ category.displayName }}
                         </router-link>
