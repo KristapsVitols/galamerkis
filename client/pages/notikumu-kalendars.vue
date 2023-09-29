@@ -85,7 +85,7 @@ export default {
         },
         async getEvents() {
             this.isLoading = true;
-            this.events = await this.$axios.$get('/content/events?_limit=200');
+            this.events = await this.$axios.$get('/content/events?_limit=400');
             this.isLoading = false;
         },
         getHighlightedDates() {
