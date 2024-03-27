@@ -1,0 +1,1 @@
+galamerkis.lv
