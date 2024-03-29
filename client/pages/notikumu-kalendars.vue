@@ -23,6 +23,7 @@
                     <div v-if="!isLoading" class="px-4 grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 flex items-stretch content-center font-serif">
                         <date-picker
                             v-for="month in 12"
+                            :key="`month-${month}`"
                             :value="new Date(new Date().getFullYear(), month - 1, month === 2 ? 28 : new Date().getDate())"
                             :calendar-class="['shadow-lg p-2 rounded h-full w-full', {'active': isCurrentMonth(month)}]"
                             :highlighted="getHighlightedDates()"
